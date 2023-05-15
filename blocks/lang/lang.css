@@ -1,0 +1,27 @@
+.dropdown_button {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.courses {
+    display: flex;
+    gap: 5px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.courses li {
+    text-decoration: none;
+    display: block;
+    list-style: none;
+    background-color: transparent;
+}
+
+.courses li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}

@@ -1,0 +1,39 @@
+.partner {
+    margin-top: 100px;
+}
+
+.partner__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 84px;
+    padding: 0;
+}
+
+.partner__item {
+    list-style: none;
+}
+
+.partner__images {
+    width: 150px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .partner__images {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .partner__images {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+    .partner__images {
+        width: 100px;
+    }
+}

@@ -1,0 +1,23 @@
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  background-image: url(../../images/video\ \(2\).mp4);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}

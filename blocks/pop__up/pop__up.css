@@ -1,0 +1,241 @@
+.pop_up {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 5;
+}
+
+.pop_up_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body {
+    margin: auto;
+    width: 500px;
+    background-color: #03030a;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pop_up_body form {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pop_up_body form input {
+    margin-top: 65px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    width: 70%;
+}
+
+.pop_up_body form input:focus {
+    outline: none;
+}
+
+.pop_up_body h3 {
+    margin-top: 105px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pop_up_body_btn {
+    width: 188px;
+    height: 46px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    border-style: none;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.pop_up_body_btn:hover {
+    background-color: #3528c9;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pop_up_formbtn {
+    color: #777;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    max-width: 280px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pop_up_body_text {
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.pop_up_body .warning {
+    color: #b10000;
+    border-bottom: 1px solid maroon;
+}
+
+.pop_up_closef {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.pop_up_closef:hover {
+    color: #3528c9;
+}
+
+.pop_up_close {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.pop_up_close:hover {
+    color: #3528c9;
+}
+
+.pop__up-card {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 5;
+}
+
+.card__body {
+    position: relative;
+    min-width: 0;
+    width: 700px;
+    padding: 40px;
+    background-color: #2a2c2f;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__descr {
+    width: 100%;
+}
+
+.card__text {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.card__text::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card__text::-webkit-scrollbar-track {
+    background: #2a2c2f;
+}
+
+.card__text::-webkit-scrollbar-thumb {
+    background-color: #0c0c19;
+    border-radius: 20px;
+    border: 1px solid #2a2c2f;
+}
+
+.card__slider {
+    min-width: 0;
+    width: 50%;
+    cursor: pointer;
+}
+
+.slider-nav img {
+    width: 84px!important;
+}
+
+.active {
+    display: block;
+}
+
+.card__active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1090px) {
+    .card__text {
+        height: 110px;
+    }
+}
+
+@media screen and (min-width: 476px) and (max-width: 767px) {
+    .card__body {
+        width: 50vw;
+    }
+    .card__slider {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 475px) {
+    .card__body {
+        width: 260px;
+    }
+    .card__slider {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 320px) {
+    .card__body {
+        width: 260px;
+    }
+    .card__slider {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
+    .card__body {
+        width: 330px;
+    }
+    .card__slider {
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+.intro__list-item {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.intro__list-item span {
+   font-weight: 400; 
+}

@@ -1,0 +1,89 @@
+.bgvideo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    width: auto;
+    height: 100vh;
+    z-index: -9999;
+    color: #2a2c2f;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1780px) and (max-width: 2800px) {
+    .bgvideo {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1710px) and (max-width: 1780px) {
+    .bgvideo {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1700px) {
+    .bgvideo {
+        height: 110vh;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+    .bgvideo {
+        height: 120vh;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+    .bgvideo {
+        height: 97vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .bgvideo {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .bgvideo {
+        height: 98vh;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 550px) {
+    .bgvideo {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-height: 736px) {
+    .bgvideo {
+        height: 75vh;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 413px) {
+    .bgvideo {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .bgvideo {
+        height: 75vh;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 375px) {
+    .bgvideo {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 320px) {
+    .bgvideo {
+        height: 100vh;
+    }
+}

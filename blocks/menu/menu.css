@@ -1,0 +1,115 @@
+.menu {
+    border-radius: 25px;
+    height: fit-content;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, .4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 0 0 0;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+    .menu {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+    }
+}
+
+.hidden-menu-ticker {
+    display: none;
+}
+
+.btn-menu {
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.btn-menu span {
+    display: block;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+
+.btn-menu span.first {
+    margin-top: 0;
+}
+
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 50px 10px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #fdf7f7;
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu li {
+    padding: 10px 0;
+}
+
+.hidden-menu li a {
+    font-size: 15px;
+    color: #000;
+    padding: 6px 0px;
+}
+
+.hidden-menu-ticker:checked~.btn-menu {
+    left: 160px;
+}
+
+.hidden-menu-ticker:checked~.hidden-menu {
+    left: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+    background-color: #000;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked~.btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+    background-color: #000;
+}

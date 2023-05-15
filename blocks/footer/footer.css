@@ -1,0 +1,24 @@
+.footer {
+    max-width: calc(100% - 96px);
+    margin: 0 auto;
+    margin-top: 92px;
+    margin-bottom: 24px;
+}
+
+.footer__sety {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: calc(100% - 48px);
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        max-width: calc(100% - 32px);
+        margin-top: 64px;
+    }
+}
